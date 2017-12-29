@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script type="text/javascript" src="../js/blog.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="MainLayout">
+		<div class="header">Header
+
+		</div>
+		<div class="navMenu">
+			<button class="mainLogo">Main Logo</button>
+	            <ul class="nav-menu">
+					<li><a id="nav-menu1" href="#">menu1</a></li>
+					<li><a id="nav-menu2" href="#">menu2</a></li>
+					<li><a id="nav-menu3" href="#">menu3</a></li>
+				</ul>
+		</div>
+		<div class="mainContents" id="mainContentsPage1">
+			<div class="sub-Content" id="sub-Content1"><img src="../imgs/content1.jpg">
+				<a href="#">Content1</a>
+			</div>
+			<div class="sub-Content" id="sub-Content2"><img src="../imgs/content2.jpg">
+				<a href="#">Content2</a>
+			</div>
+			<div class="sub-Content" id="sub-Content3"><img src="../imgs/content3.jpg">
+				<a href="#">Content3</a>
+			</div>
+			<div class="sub-Content" id="sub-Content4"><img src="../imgs/content4.jpg">
+				<a href="#">Content4</a>
+			</div>
+			<div class="sub-Content" id="sub-Content5"><img src="../imgs/content5.jpg">
+				<a href="#">Content5</a>
+			</div>
+			<div class="sub-Content" id="sub-Content6"><img src="../imgs/content6.jpg">
+				<a href="#">Content6</a>
+			</div>
+		</div>
+
+
+		<div class="asideMenu">asideMenu
+			<div class="recentTexts">
+				<div class="recentText"><a href="#">[category]내용내용내용내용내용내용내용내용내용내용내용내용</a></div>
+				<div class="recentText"><a href="#">[category]내용</a></div>
+				<div class="recentText"><a href="#">[category]내용</a></div>
+				<div class="recentText"><a href="#">[category]내용</a></div>
+				<div class="recentText"><a href="#">[category]내용</a></div>
+			</div>
+			<div class="about" id="resumePage">
+				<a href=""></a>ABOUT<br/>(Resume)
+			</div>
+			<div class="snsIcons">
+				<img id="gitMove" src="../imgs/github.png" onmouseover="this.src='../imgs/github2.png'" onmouseout="this.src='../imgs/github.png'" border="0">
+				<img src="../imgs/facebook.png">
+			</div>
+		</div>
+
+	</div>
+
+	<script>
+
+		$(document).ready(function () {
+	        $("#nav-menu2").click(function() {
+	        	// $(location).attr('href',"../html/ContentsPage2.html");
+	            location.href="./contentsPage2.html";
+	        });
+	    });
+
+	    $(document).ready(function () {
+	        $("#nav-menu3").click(function() {
+	            location.href="./contentsPage3.html";
+	        });
+	    });
+
+	    $(document).ready(function () {
+	        $("#resumePage").click(function() {
+	            location.href="./resumePage.html";
+	        });
+	    });
+
+	    $(document).ready(function () {
+	        $("#gitMove").click(function() {
+	            location.href="https://github.com/ChoiEunSeok1";
+	        });
+	    });
+	</script>
+
+	
+
+</body>
+</html>

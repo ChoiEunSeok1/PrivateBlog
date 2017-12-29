@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script type="text/javascript" src="../js/blog.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- 	<link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->   
+	<!-- 	skill icon  -->	
+	<link href="../vendor/devicons/css/devicons.min.css" rel="stylesheet"> 
+
+    <link href="../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+     <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet"> 
+        <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+</head>
+<body>
+	<div class="MainLayout">
+		<div class="header">Header
+
+		</div>
+		<div class="navMenu">
+			<button class="mainLogo">Main Logo</button>
+	            <ul class="nav-menu">
+					<li><a id="nav-menu1" href="#">menu1</a></li>
+					<li><a id="nav-menu2" href="#">menu2</a></li>
+					<li><a id="nav-menu3" href="#">menu3</a></li>
+				</ul>
+		</div>
+		<div class="mainContents" id="mainContentsPage1">
+
+			<h1 class="mb-0"><span class="dayAndNightAdjColor">EUN-SEOK</span>
+           		<span class="text-primary">CHOI</span>
+          	</h1>
+          	<div class="subheading mb-5">울산시 울주군 삼남면 교동리 
+       			<a class="text-primary" href="mailto:name@email.com">dmstjr0216@gmail.com</a>
+         	</div>
+         	<p class="mb-5">I learned how to program through various on-campus lectures. And I have experience in making a simple program while studying.</p>
+
+         	<h2 class="mb-5"><span class="dayAndNightAdjColor">Experience</span></h2>
+
+            <h3 class="mb-0"><span class="dayAndNightAdjColor">Simple program development with ARDUINO</span></h3>
+            <p>I have been developing a simple program for two weeks through special lectures on campus.</p>
+
+            <h3 class="mb-0"><span class="dayAndNightAdjColor">Simple game development using UNITY</span></h3>
+            <p>I received a three-week training and a certificate through a special lecture in the school.</p>
+
+          
+            <h3 class="mb-0"><span class="dayAndNightAdjColor">Simple APP development using Android</span></h3>
+	        <p>I have been teaching for 3 weeks through special lectures in the school and I have been making simple APP.</p>
+
+	        <h3 class="mb-0"><span class="dayAndNightAdjColor">Web Developer Training</span></h3>
+	        <p>During the three months of learning web developer training, I learned how to use a variety of tools.</p>
+
+       		<h2 class="mb-5"><span class="dayAndNightAdjColor">Skills</span></h2>
+          	<div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          	<ul class="list-inline list-icons">
+	            <li class="list-inline-item">
+	              	<i class="devicons devicons-html5"></i>
+	            </li>
+	            <li class="list-inline-item">
+	              	<i class="devicons devicons-css3"></i>
+	            </li>
+	            <li class="list-inline-item">
+	             	 <i class="devicons devicons-javascript"></i>
+	            </li>
+	            <li class="list-inline-item">
+	             	 <i class="devicons devicons-jquery"></i>
+	            </li>
+	            <li class="list-inline-item">
+	            	  <i class="devicons devicons-bootstrap"></i>
+	            </li>
+	            <li class="list-inline-item">
+	            	  <i class="devicons devicons-android"></i>
+	            </li>
+	            <li class="list-inline-item">
+	            	  <i class="devicons devicons-java"></i>
+	            </li>
+	            <li class="list-inline-item">
+	            	  <i class="devicons devicons-unity_small"></i>
+	            </li>
+          </ul>     
+
+			
+		</div>
+
+
+		<div class="asideMenu">asideMenu
+			<div class="recentTexts">
+				<div class="recentText"><a href="#">[category]내용내용내용내용내용내용내용내용내용내용내용내용</a></div>
+				<div class="recentText"><a href="#">[category]내용</a></div>
+				<div class="recentText"><a href="#">[category]내용</a></div>
+				<div class="recentText"><a href="#">[category]내용</a></div>
+				<div class="recentText"><a href="#">[category]내용</a></div>
+			</div>
+			<div class="about" id="resumePage">
+				<a href=""></a>ABOUT<br/>(Resume)
+			</div>
+			<div class="snsIcons">
+				<img src="../imgs/github.png">
+				<img src="../imgs/facebook.png">
+			</div>
+		</div>
+
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$(".nav-menu").click(function(){
+				var id = $(this).attr('id');
+				alert("id : " + id);
+			});
+		});
+
+		$(document).ready(function () {
+	        $("#nav-menu1").click(function() {
+	        	// $(location).attr('href',"../html/ContentsPage2.html");
+	            location.href="./index.html";
+	        });
+	    });
+
+	    $(document).ready(function () {
+	        $("#nav-menu3").click(function() {
+	            location.href="./contentsPage3.html";
+	        });
+	    });
+
+	</script>
+
+	
+
+</body>
+</html>
